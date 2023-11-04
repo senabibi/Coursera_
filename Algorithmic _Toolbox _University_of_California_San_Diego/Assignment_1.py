@@ -1,9 +1,7 @@
-# Read two digits from standard input
-num1 = int(input("Enter the first digit: "))
-num2 = int(input("Enter the second digit: "))
+def sum_of_two_digits(first_digit, second_digit):
+    return first_digit + second_digit
 
-# Calculate the sum of the two digits
-sum_of_digits = num1 + num2
 
-# Print the result
-print("The sum of", num1, "and", num2, "is:", sum_of_digits)
+if __name__ == '__main__':
+    a, b = map(int, input().split())
+    print(sum_of_two_digits(a, b))
